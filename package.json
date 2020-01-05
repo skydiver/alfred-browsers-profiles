@@ -1,7 +1,7 @@
 {
   "name": "alfred-chrome-profiles",
   "version": "1.0.0",
-  "description": "Open your Chrome profiles from Alfred",
+  "description": "Open your Google Chrome or Canary profiles from Alfred",
   "main": "index.js",
   "keywords": [
     "alfred",

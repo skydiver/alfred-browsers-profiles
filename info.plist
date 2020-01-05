@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>dev.skydiver.alfred.chrome</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>35B0D4F6-552C-48E6-B893-714093B535CE</key>
+		<array/>
+		<key>89DDAF9B-84D4-40E8-A98B-32FCF1472372</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>35B0D4F6-552C-48E6-B893-714093B535CE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Martín M.</string>
+	<key>description</key>
+	<string>Open your Google Chrome or Canary profiles from Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Chrome Profiles</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>read browser profile &lt;&lt;&lt; "{query}"
+
+
+if [[ "$browser" == "CHROME_CANARY" ]]; then
+    BROW="Google Chrome Canary"
+else
+    BROW="Google Chrome"
+fi
+
+
+open -n -a "$BROW" --args --profile-directory="$profile"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>35B0D4F6-552C-48E6-B893-714093B535CE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cprof</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search Chrome or Canary profile</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>89DDAF9B-84D4-40E8-A98B-32FCF1472372</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>35B0D4F6-552C-48E6-B893-714093B535CE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>415</integer>
+			<key>ypos</key>
+			<integer>100</integer>
+		</dict>
+		<key>89DDAF9B-84D4-40E8-A98B-32FCF1472372</key>
+		<dict>
+			<key>xpos</key>
+			<integer>95</integer>
+			<key>ypos</key>
+			<integer>100</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/skydiver/</string>
+</dict>
+</plist>
