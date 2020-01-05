@@ -1,33 +1,9 @@
 const alfy = require('alfy');
-const chromeProfileList = require('chrome-profile-list');
+
+const { getProfiles } = require('./lib/chrome-profiles');
 
 (async () => {
-  const profilesChrome = chromeProfileList(chromeProfileList.variations.CHROME);
-  const profilesCanary = chromeProfileList(
-    chromeProfileList.variations.CHROME_CANARY
-  );
-
-  const itemsChrome = alfy
-    .inputMatches(profilesChrome, 'displayName')
-    .map(element => ({
-      title: element.displayName,
-      subtitle: `Open Chrome using ${element.displayName} profile.`,
-      arg: element.displayName,
-      icon: {
-        path: 'icons/chrome.icns',
-      },
-    }));
-
-  const itemsCanary = alfy
-    .inputMatches(profilesCanary, 'displayName')
-    .map(element => ({
-      title: element.displayName,
-      subtitle: `Open Chrome using ${element.displayName} profile.`,
-      arg: element.displayName,
-      icon: {
-        path: 'icons/canary.icns',
-      },
-    }));
-
+  const itemsChrome = getProfiles('CHROME');
+  const itemsCanary = getProfiles('CHROME_CANARY');
   alfy.output([...itemsChrome, ...itemsCanary]);
 })();
