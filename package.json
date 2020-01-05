@@ -1,0 +1,22 @@
+{
+  "name": "alfred-chrome-profiles",
+  "version": "1.0.0",
+  "description": "Open your Chrome profiles from Alfred",
+  "main": "index.js",
+  "keywords": [
+    "alfred",
+    "alfred-workflow",
+    "alfred3-workflow",
+    "chrome"
+  ],
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "author": "Martín M.",
+  "license": "MIT",
+  "dependencies": {
+    "alfred-notifier": "^0.2.3",
+    "alfy": "^0.9.1"
+  }
+}
