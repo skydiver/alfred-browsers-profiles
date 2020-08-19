@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>dev.skydiver.alfred.chrome</string>
+	<string>dev.skydiver.alfred.browsers-profiles</string>
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
@@ -27,11 +27,11 @@
 	<key>createdby</key>
 	<string>Martín M.</string>
 	<key>description</key>
-	<string>Open your Google Chrome or Canary profiles from Alfred</string>
+	<string>Open your browsers profiles from Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Chrome Profiles</string>
+	<string>Browsers Profiles</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -50,7 +50,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cprof</string>
+				<string>bp</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -70,7 +70,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search Chrome or Canary profile</string>
+				<string>Search your browsers profiles</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -118,7 +118,7 @@ open -n -a "$BROW" --args --profile-directory="$profile"</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Open your browsers profiles from Alfred</string>
 	<key>uidata</key>
 	<dict>
 		<key>35B0D4F6-552C-48E6-B893-714093B535CE</key>
@@ -136,6 +136,8 @@ open -n -a "$BROW" --args --profile-directory="$profile"</string>
 			<integer>100</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/skydiver/</string>
 </dict>
