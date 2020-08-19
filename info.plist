@@ -96,6 +96,10 @@
 
 if [[ "$browser" == "CHROME_CANARY" ]]; then
     BROW="Google Chrome Canary"
+
+elif [[ "$browser" == "BRAVE" ]]; then
+    BROW="Brave Browser"
+
 else
     BROW="Google Chrome"
 fi
