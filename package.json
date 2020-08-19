@@ -1,19 +1,19 @@
 {
-  "name": "alfred-chrome-profiles",
-  "version": "2.0.1",
-  "description": "Open your Google Chrome or Canary profiles from Alfred",
+  "name": "alfred-browsers-profiles",
+  "version": "1.0.0",
+  "description": "Open your browsers profiles from Alfred",
   "keywords": [
     "alfred",
     "alfred-workflow",
-    "chrome",
-    "chrome profiles"
+    "browsers",
+    "profiles"
   ],
+  "license": "MIT",
+  "author": "Martín M.",
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
-  "author": "Martín M.",
-  "license": "MIT",
   "dependencies": {
     "alfy": "^0.9.1"
   }
