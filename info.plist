@@ -68,13 +68,13 @@
 				<key>scriptfile</key>
 				<string>main.py</string>
 				<key>subtext</key>
-				<string></string>
-				<key>title</key>
 				<string>Search your browsers profiles</string>
+				<key>title</key>
+				<string>Browsers Profiles</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -122,7 +122,12 @@ open -n -a "$BROW" --args --profile-directory="$profile"</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Open your browsers profiles from Alfred</string>
+	<string>Open your browsers profiles from Alfred
+
+---
+
+Icon by Alexiuz AS
+https://www.iconfinder.com/icons/4263528/browser_site_staging_website_window_icon</string>
 	<key>uidata</key>
 	<dict>
 		<key>35B0D4F6-552C-48E6-B893-714093B535CE</key>
