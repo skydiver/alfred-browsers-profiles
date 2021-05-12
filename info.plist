@@ -68,13 +68,13 @@
 				<key>scriptfile</key>
 				<string>main.py</string>
 				<key>subtext</key>
-				<string>Search your browsers profiles</string>
+				<string>Direct launch of browser profile</string>
 				<key>title</key>
 				<string>Browsers Profiles</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -133,16 +133,16 @@ https://www.iconfinder.com/icons/4263528/browser_site_staging_website_window_ico
 		<key>35B0D4F6-552C-48E6-B893-714093B535CE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>400</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>95</integer>
 		</dict>
 		<key>89DDAF9B-84D4-40E8-A98B-32FCF1472372</key>
 		<dict>
 			<key>xpos</key>
-			<integer>95</integer>
+			<integer>80</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>95</integer>
 		</dict>
 	</dict>
 	<key>version</key>
