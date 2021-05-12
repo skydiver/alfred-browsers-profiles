@@ -3,11 +3,12 @@
 import os
 import json
 from lib.chromium import get_chromium_profiles
+from lib.firefox import get_firefox_profiles
 
 
 home = os.path.expanduser("~")
 
-browsers = [
+chromium = [
   {
     'name': 'CHROME',
     'path': '/Library/Application Support/Google/Chrome',
@@ -30,11 +31,24 @@ browsers = [
   },
 ]
 
+firefox = [
+  {
+    'name': 'FIREFOX',
+    'path': '/Library/Application Support/Firefox',
+    'icon': 'firefox.icns'
+  },
+]
+
 profiles = []
 
-for browser in browsers:
+for browser in chromium:
   path = "{}/{}".format(home, browser['path'])
   prof = get_chromium_profiles(browser, path)
+  profiles += prof
+
+for browser in firefox:
+  path = "{}/{}".format(home, browser['path'])
+  prof = get_firefox_profiles(browser, path)
   profiles += prof
 
 result = json.dumps({"items": profiles}, indent=2)

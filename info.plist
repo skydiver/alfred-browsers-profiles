@@ -95,17 +95,21 @@
 
 
 if [[ "$browser" == "CHROME_CANARY" ]]; then
-    BROW="Google Chrome Canary"
+	open -n -a "Google Chrome Canary" --args --profile-directory="$profile"
 
 elif [[ "$browser" == "BRAVE" ]]; then
-    BROW="Brave Browser"
+	open -n -a "Brave Browser" --args --profile-directory="$profile"
 
-else
-    BROW="Google Chrome"
-fi
+elif [[ "$browser" == "CHROME" ]]; then
+	open -n -a "Google Chrome" --args --profile-directory="$profile"
 
+elif [[ "$browser" == "FIREFOX" ]]; then
+	/Applications/Firefox.app/Contents/MacOS/firefox -P --no-remote $profile
 
-open -n -a "$BROW" --args --profile-directory="$profile"</string>
+elif [[ "$browser" == "FIREFOX_DEV" ]]; then
+	/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox -P --no-remote $profile
+
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
