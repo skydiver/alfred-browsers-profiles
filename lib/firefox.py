@@ -26,7 +26,7 @@ def get_firefox_profiles(browser, path):
           "path": "icons/{}".format(icon)
         },
         "arg": "{} {}".format(name, browser_profile),
-        "subtitle": "Open {} profile using {}.".format(browser_profile, title),
+        "subtitle": "Open {} using {} profile.".format(title, browser_profile),
         "title": browser_profile,
       })
 
