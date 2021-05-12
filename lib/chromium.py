@@ -1,7 +1,7 @@
 import os
 import json
 
-def get_profiles(browser, path):
+def get_chromium_profiles(browser, path):
   profiles = []
   if os.path.isdir(path) == False:
     return profiles
