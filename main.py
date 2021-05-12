@@ -37,6 +37,11 @@ firefox = [
     'path': '/Library/Application Support/Firefox',
     'icon': 'firefox.icns'
   },
+  {
+    'name': 'FIREFOX_DEV',
+    'path': '/Library/Application Support/Firefox',
+    'icon': 'firefox-dev.icns'
+  },
 ]
 
 profiles = []
