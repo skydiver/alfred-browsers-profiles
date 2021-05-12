@@ -1,23 +1,33 @@
 import os, configparser
 
 def get_firefox_profiles(browser, path):
+  browser_titles = {
+    "FIREFOX": "Firefox",
+    "FIREFOX_DEV": "Firefox Developer Edition"
+  }
+
+  name = browser['name']
+  icon = browser['icon']
+  title = browser_titles[name]
+
   profiles = []
 
   config_file = "{}/profiles.ini".format(path)
   config = configparser.ConfigParser()
   config.read(config_file)
 
-  for name in config.sections():
+  for profile in config.sections():
 
     try:
-      profile = config.get(name, "Name")
+      browser_profile = config.get(profile, "Name")
+
       profiles.append({
         "icon": {
-          "path": "icons/{}".format(browser['icon'])
+          "path": "icons/{}".format(icon)
         },
-        "arg": "{} {}".format(browser['name'], profile),
-        "subtitle": "Open Firefox using {} profile.".format(profile),
-        "title": profile,
+        "arg": "{} {}".format(name, browser_profile),
+        "subtitle": "Open {} profile using {}.".format(browser_profile, title),
+        "title": browser_profile,
       })
 
     except configparser.NoOptionError:
