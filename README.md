@@ -3,6 +3,5 @@
 
 
 ## Installation
-1. open your console
-2. run `npm install -g alfred-browsers-profiles`
-3. type `bp` on Alfred to see a list of your profiles
+1. download latest version from [releases](https://github.com/skydiver/alfred-browsers-profiles/releases) section
+2. open download `.alfredworkflow` file
