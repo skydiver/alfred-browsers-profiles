@@ -108,7 +108,6 @@ elif [[ "$browser" == "FIREFOX" ]]; then
 
 elif [[ "$browser" == "FIREFOX_DEV" ]]; then
 	/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox -P --no-remote $profile
-
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
