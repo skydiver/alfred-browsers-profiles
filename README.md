@@ -1,8 +1,20 @@
-# alfred-browsers-profiles
+# Browsers Profiles for Alfred
 > Open your browsers profiles from Alfred
 
 
 ## Installation
-1. open your console
-2. run `npm install -g alfred-browsers-profiles`
-3. type `cprof` on Alfred to see a list of your profiles
+1. download latest version from [releases](https://github.com/skydiver/alfred-browsers-profiles/releases) section
+2. open download `.alfredworkflow` file
+
+## Usage
+1. activate Alfred
+2. type `bp` or `bp <your profile>`
+
+## Supported Browsers
+* Chrome
+* Chromium
+* Brave
+* Firefox
+
+## Screenshot
+![Workflow Screenshot](screenshot.png)

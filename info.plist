@@ -95,17 +95,20 @@
 
 
 if [[ "$browser" == "CHROME_CANARY" ]]; then
-    BROW="Google Chrome Canary"
+	open -n -a "Google Chrome Canary" --args --profile-directory="$profile"
 
 elif [[ "$browser" == "BRAVE" ]]; then
-    BROW="Brave Browser"
+	open -n -a "Brave Browser" --args --profile-directory="$profile"
 
-else
-    BROW="Google Chrome"
-fi
+elif [[ "$browser" == "CHROME" ]]; then
+	open -n -a "Google Chrome" --args --profile-directory="$profile"
 
+elif [[ "$browser" == "FIREFOX" ]]; then
+	/Applications/Firefox.app/Contents/MacOS/firefox -P --no-remote $profile
 
-open -n -a "$BROW" --args --profile-directory="$profile"</string>
+elif [[ "$browser" == "FIREFOX_DEV" ]]; then
+	/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox -P --no-remote $profile
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -146,7 +149,7 @@ https://www.iconfinder.com/icons/4263528/browser_site_staging_website_window_ico
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>2.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/skydiver/</string>
 </dict>

@@ -1,0 +1,48 @@
+{
+  "chromium": [
+    {
+      "app": "/Applications/Google Chrome.app",
+      "name": "CHROME",
+      "title": "Chrome",
+      "path": "/Library/Application Support/Google/Chrome",
+      "icon": "chrome.icns"
+    },
+    {
+      "app": "/Applications/Google Chrome Canary.app",
+      "name": "CHROME_CANARY",
+      "title": "Chrome Canary",
+      "path": "/Library/Application Support/Google/Chrome Canary",
+      "icon": "canary.icns"
+    },
+    {
+      "app": "/Applications/Chromium.app",
+      "name": "chromium",
+      "title": "Chromium",
+      "path": "/Library/Application Support/Chromium",
+      "icon": "chromium.icns"
+    },
+    {
+      "app": "/Applications/Brave Browser.app",
+      "name": "BRAVE",
+      "title": "Brave",
+      "path": "/Library/Application Support/BraveSoftware/Brave-Browser",
+      "icon": "brave.icns"
+    }
+  ],
+  "firefox": [
+    {
+      "app": "/Applications/Firefox.app",
+      "name": "FIREFOX",
+      "title": "Firefox",
+      "path": "/Library/Application Support/Firefox",
+      "icon": "firefox.icns"
+    },
+    {
+      "app": "/Applications/FirefoxDeveloperEdition.app",
+      "name": "FIREFOX_DEV",
+      "title": "Firefox Developer Edition",
+      "path": "/Library/Application Support/Firefox",
+      "icon": "firefox-dev.icns"
+    }
+  ]
+}
