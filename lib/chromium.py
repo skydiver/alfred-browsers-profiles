@@ -31,7 +31,7 @@ def get_chromium_profiles(browser, path):
           "icon": {
             "path": "icons/{}".format(icon)
           },
-          "arg": "{} {}".format(browser_profile, folder),
+          "arg": "{} {}".format(name, folder),
           "subtitle": "Open {} using {} profile.".format(title, browser_profile),
           "title": browser_profile,
         })
