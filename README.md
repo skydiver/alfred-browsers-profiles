@@ -15,6 +15,7 @@
 * Chromium
 * Brave
 * Firefox
+* Edge
 
 ## Screenshot
 ![Workflow Screenshot](screenshot.png)

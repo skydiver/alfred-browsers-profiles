@@ -108,6 +108,12 @@ elif [[ "$browser" == "FIREFOX" ]]; then
 
 elif [[ "$browser" == "FIREFOX_DEV" ]]; then
 	/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox -P --no-remote $profile
+
+elif [[ "$browser" == "EDGE" ]]; then
+	open -n -a "Microsoft Edge" --args --profile-directory="$profile"
+
+elif [[ "$browser" == "EDGE_CANARY" ]]; then
+	open -n -a "Microsoft Edge Canary" --args --profile-directory="$profile"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -148,8 +154,10 @@ https://www.iconfinder.com/icons/4263528/browser_site_staging_website_window_ico
 			<integer>95</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2.0.0</string>
+	<string>2.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/skydiver/</string>
 </dict>

@@ -27,6 +27,20 @@
       "title": "Brave",
       "path": "/Library/Application Support/BraveSoftware/Brave-Browser",
       "icon": "brave.icns"
+    },
+    {
+      "app": "/Applications/Microsoft Edge.app",
+      "name": "EDGE",
+      "title": "Edge",
+      "path": "/Library/Application Support/Microsoft Edge",
+      "icon": "edge.icns"
+    },
+    {
+      "app": "/Applications/Microsoft Edge Canary.app",
+      "name": "EDGE_CANARY",
+      "title": "Edge Canary",
+      "path": "/Library/Application Support/Microsoft Edge Canary",
+      "icon": "edge.icns"
     }
   ],
   "firefox": [
