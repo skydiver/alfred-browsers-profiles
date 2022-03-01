@@ -14,6 +14,7 @@
 * Chrome
 * Chromium
 * Brave
+* Edge
 * Firefox
 
 ## Screenshot
