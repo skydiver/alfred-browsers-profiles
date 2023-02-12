@@ -12,10 +12,13 @@
 
 ## Supported Browsers
 * Chrome
+* Chrome Canary
 * Chromium
 * Brave
 * Edge
+* Edge Canary
 * Firefox
+* Firefox Developer Edition
 
 ## Screenshot
 ![Workflow Screenshot](screenshot.png)
