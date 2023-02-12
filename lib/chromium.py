@@ -26,7 +26,11 @@ def get_chromium_profiles(browser, path):
             with open(file) as f:
                 data = json.load(f)
 
-                browser_profile = get_profile_name(path, folder) if browser['name'] == 'chromium' else data['profile']['name']
+                if browser['name'] == 'chromium':
+                    chromium_profile = get_profile_name(path, folder)
+                    browser_profile = chromium_profile if chromium_profile is not None else data['profile']['name']
+                else:
+                    browser_profile = data['profile']['name']
 
                 profiles.append({
                     "icon": {
