@@ -16,7 +16,7 @@
     },
     {
       "app": "/Applications/Chromium.app",
-      "name": "chromium",
+      "name": "CHROMIUM",
       "title": "Chromium",
       "path": "/Library/Application Support/Chromium",
       "icon": "chromium.icns"

@@ -26,7 +26,7 @@ def get_chromium_profiles(browser, path):
             with open(file) as f:
                 data = json.load(f)
 
-                if browser['name'] == 'chromium':
+                if browser['name'] == 'CHROMIUM':
                     chromium_profile = get_profile_name(path, folder)
                     browser_profile = chromium_profile if chromium_profile is not None else data['profile']['name']
                 else:

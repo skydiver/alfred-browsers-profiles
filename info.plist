@@ -100,6 +100,9 @@ if [[ "$browser" == "CHROME_CANARY" ]]; then
 elif [[ "$browser" == "BRAVE" ]]; then
 	open -n -a "Brave Browser" --args --profile-directory="$profile"
 
+elif [[ "$browser" == "CHROMIUM" ]]; then
+	open -n -a "Chromium" --args --profile-directory="$profile"
+
 elif [[ "$browser" == "CHROME" ]]; then
 	open -n -a "Google Chrome" --args --profile-directory="$profile"
 
