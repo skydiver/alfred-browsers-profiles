@@ -3,6 +3,9 @@ import json
 from lib.helpers import get_browsers_titles
 
 
+################################################################################
+# Browse trough Chromium based browser profiles
+################################################################################
 def get_chromium_profiles(browser, path):
     browser_titles = get_browsers_titles('chromium')
 
@@ -22,7 +25,8 @@ def get_chromium_profiles(browser, path):
         if folder != 'System Profile' and os.path.isfile(file):
             with open(file) as f:
                 data = json.load(f)
-                browser_profile = data['profile']['name']
+
+                browser_profile = get_profile_name(path, folder) if browser['name'] == 'chromium' else data['profile']['name']
 
                 profiles.append({
                     "icon": {
@@ -34,3 +38,17 @@ def get_chromium_profiles(browser, path):
                 })
 
     return profiles
+
+
+################################################################################
+# Chromium stores the profile name in Local State file
+################################################################################
+def get_profile_name(path, folder):
+    local_state_file = "{}/Local State".format(path)
+
+    with open(local_state_file) as f:
+        data = json.load(f)
+        if folder in data['profile']['info_cache']:
+            return data['profile']['info_cache'][folder]['name']
+
+    return None
